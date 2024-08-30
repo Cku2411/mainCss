@@ -2,15 +2,57 @@
   box-sizing: border-box;
 }
 :root {
-  --toggle-switch-bg: #232428;
-  --toggle-border: #232428;
-  --toggle-bg: #fff;
-  --toggle-witdh: 200px;
-  --toggle-height: 60px;
+  --card-bg: #232428;
+  --card-border: #232428;
+  --card-color: #fff;
+  --card-witdh: 400px;
+  --card-height: calc(var(--card-witdh) * 3 / 2);
+  --card-fsize: 30px;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  font-size: var(--card-fsize);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid var(--card-border);
+  height: var(--card-height);
+  width: var(--card-witdh);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top > div:nth-child(2),
+.bottom > div:nth-child(2) {
+  padding-left: 2.5px;
+}
+
+.center {
+  align-self: center;
+  font-size: calc(var(--card-fsize) * 5);
+}
+
+.bottom {
+  /* margin-left: calc(var(--card-witdh) - 1.5em - (1.5 / 2) em); */
+  transform: rotate(180deg);
 }

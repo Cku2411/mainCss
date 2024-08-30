@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --toggle-switch-bg: #232428;
+  --toggle-border: #232428;
+  --toggle-bg: #fff;
+  --toggle-witdh: 200px;
+  --toggle-height: 60px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

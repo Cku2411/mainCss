@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --red: #fc3e32;
+  --green: #007e39;
+  --flag-height: 300px;
+  --flag-width: calc(var(--flag-height) * 3 / 2);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-madagascar {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  background-color: aquamarine;
+  /* margin: auto; */
+  /* border: 1px solid white; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.stripe {
+}
+
+.red {
+  background-color: var(--red);
+  height: 50%;
+  width: var(--flag-height);
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.white {
+  background-color: var(--white);
+  /* height: var(--flag-height); */
+  width: var(--flag-height);
+}
+
+.green {
+  background-color: var(--green);
+  height: 50%;
+}

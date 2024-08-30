@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --main-bg: #000;
+  --profile-bg: #0d1117;
+  --profile-color: #c9d1d9;
+  --profile-img-border: #2e343b;
+  --username-font-color: #8b949e;
+  --username-font-weight: 400;
+  --btn-bg: #21262d;
+  --btn-color: #c9d1d9;
+  --btn-bg-hover: #30363d;
+  --btn-border: #373b43;
+  --btn-border-hover: #8c949e;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--main-bg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  background-color: var(--profile-bg);
+  /* width: 80%;
+  max-width: 250px;
+  max-height: 400px;
+  margin: 1em auto; */
+  padding: 2em;
+}
+
+.profile-content {
+}
+
+.profile-container img {
+  border-radius: 50%;
+  border: 2px solid var(--profile-img-border);
+  max-width: 100%;
+}
+
+.profile-details {
+  color: var(--profile-color);
+  font-weight: var(--username-font-weight);
+}
+
+.profile-details h2 {
+  color: var(--profile-color);
+  margin-bottom: 0;
+  color: var(--username-font-color);
+}
+
+.profile-details h3 {
+  margin-top: 0;
+  color: var(--username-font-color);
+  font-size: 1em;
+  font-weight: var(--username-font-weight);
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  color: var(--btn-color);
+  font-size: inherit;
+}
+
+.btn:hover {
+  background-color: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0269a6;
+  --yellow: #fecc00;
+  --flag-height: 500px;
+  --flag-width: calc(var(--flag-height) * 8 / 5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-sweden {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  display: flex;
+  background-color: var(--blue);
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.no1 {
+  height: calc(var(--flag-height) / 5 * 1);
+  width: 100%;
+  align-self: center;
+}
+
+.no2 {
+  height: 100%;
+  width: calc(var(--flag-width) / 8 * 1);
+  align-self: center;
+  position: absolute;
+  left: 33%;
+}

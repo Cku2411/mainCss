@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-light: lightgray;
+  --color-dark: darkgray;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  padding: 1em;
+  margin: auto;
+  max-width: 300px;
+  height: 100vh;
+  /* background-color: aqua; */
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--color-light);
+  width: 3.5em;
+  height: 3.5em;
+  margin: 0.5em;
+  animation: cku infinite 1s alternate;
+}
+
+@keyframes cku {
+  from {
+    background: var(--color-dark);
+  }
+  to {
+    background: rebeccapurple;
+    height: 5em;
+    width: 5em;
+  }
+}

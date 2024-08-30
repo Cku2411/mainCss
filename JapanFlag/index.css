@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --red: #bc022c;
+  --flag-height: 500px;
+  --flag-width: calc(var(--flag-height) * 3 / 2);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-japan {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--red);
+  height: calc(var(--flag-width) / 3);
+  width: calc(var(--flag-width) / 3);
+}
+.red {
+}

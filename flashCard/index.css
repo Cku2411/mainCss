@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+  color: white;
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border: 1px solid blue;
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  background-color: lightgreen;
+  text-transform: uppercase;
+}
+
+.card-back {
+  display: none;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+  display: none;
+}
